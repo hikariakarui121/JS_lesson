@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="jq">あいうえお</div>
+  <div class="jc">111111</div>
+
+
+  
+
+ <!-- 下記でjqueryを呼び出している -->
+ <!-- jquery google で検索して一番上にでるやつから引っ張ってくる。 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    // document.querySelector("#")
+    // appendは挿入、※ちなみにhtmlは内容の上書き
+    $("body").append("<div>ABC</div>");
+    $("#jq").html("かきくけこ");
+    $("div").html("aaaaaaaaa")
+    
+    // よく使うメソッド
+
+  const link ='<a href ="#">リンク</a>'
+    $("#jq").html(link);
+    // 文字として使う場合はテキスト
+    $("#jq").text(link);
+    $("#jq").css("color","red");
+    $("#jq").css("background-color","black");
+    // $("#jq").hide(2000);
+    $("#jq").fadeOut(2000).fadeIn(2000);
+    // appendは差し込む（一番下）
+    // prependは一番上に入れる
+    $("#jq").prepend("ABC");
+    // emptyは中身を空っぽにする
+    // removeはそれごとなくなる。IDごとなくなる
+
+
+
+    
+    
+
+
+  </script>
+</body>
+</html>
+

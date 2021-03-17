@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>練習問題</title>
+</head>
+<body>
+  <!-- div #ex をHTMLでかく
+  その下にボタンをつくる（＃showと＃HIDEのふたつ
+  hideクリックで2秒　#exを消す
+  showクリックで表示
+  exにボタンをshowをおされた数を表示
+  exのボーダーがshowを押されるたびに太くする -->
+
+  <div id="ex">
+    アイウエオ
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button>
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $("#hide").on("click",function(){
+      $("#ex").fadeOut(2000);
+    });
+
+    $("#show").on("click",function(){
+      const n = c
+      $("#ex").fadeIn(2000);
+      $("#ex").css(border,npx);
+      
+    });
+
+
+  </script>
+
+
+
+
+
+</body>
+</html>

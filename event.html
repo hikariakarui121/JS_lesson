@@ -1,0 +1,30 @@
+<!-- ページや画像が酔う見込みが完了された時がonload -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クリックイベント</title>
+</head>
+<body>
+  <button id="btn">クリック</button>
+
+
+
+  <script>
+
+    const btn =document.querySelector("#btn");
+    btn.onclick =function(e){
+      // eってなに？省略できるよ
+      console.log(e);
+      // クリックした場所の情報が出てくる
+      console.log(e.pageX);
+      // eのエックス座標をとれる。
+      alert("クリックしました");
+    }
+
+  </script>
+
+</body>
+</html>
